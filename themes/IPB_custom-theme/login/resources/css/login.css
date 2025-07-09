@@ -1,0 +1,258 @@
+/* Custom Keycloak Login Theme Styles */
+
+/* Override default Keycloak styles */
+.login-pf body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main container styling */
+.kc-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+/* Card styling */
+#kc-header,
+#kc-content,
+#kc-info {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+    padding: 30px;
+}
+
+/* Header styling */
+#kc-header {
+    text-align: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 12px 12px 0 0;
+    margin-bottom: 0;
+}
+
+#kc-header-wrapper h1 {
+    font-size: 28px;
+    font-weight: 300;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+/* Form styling */
+#kc-form {
+    padding: 0;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+/* Input styling */
+.form-control {
+    border: 2px solid #e1e5e9;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-control:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    outline: none;
+    background: white;
+}
+
+/* Label styling */
+.control-label {
+    font-weight: 600;
+    color: #4a5568;
+    margin-bottom: 8px;
+    display: block;
+    font-size: 14px;
+}
+
+/* Button styling */
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 8px;
+    padding: 14px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    color: white;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+/* Checkbox styling */
+.checkbox {
+    margin: 20px 0;
+}
+
+.checkbox label {
+    font-size: 14px;
+    color: #4a5568;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+/* Link styling */
+a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #764ba2;
+    text-decoration: underline;
+}
+
+/* Form options styling */
+#kc-form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+/* Error message styling */
+.kc-feedback-text {
+    color: #e53e3e;
+    font-size: 14px;
+    margin-top: 8px;
+    padding: 8px 12px;
+    background: rgba(229, 62, 62, 0.1);
+    border-radius: 6px;
+    border-left: 4px solid #e53e3e;
+}
+
+/* Social providers styling */
+#kc-social-providers {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #e1e5e9;
+}
+
+#kc-social-providers h4 {
+    text-align: center;
+    color: #4a5568;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.kc-social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.kc-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 16px;
+    border: 2px solid #e1e5e9;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #4a5568;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.kc-social-link:hover {
+    border-color: #667eea;
+    background: rgba(102, 126, 234, 0.05);
+    color: #667eea;
+}
+
+/* Registration link styling */
+#kc-registration {
+    text-align: center;
+    padding: 20px;
+    background: rgba(102, 126, 234, 0.05);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .kc-container {
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+    
+    #kc-header,
+    #kc-content,
+    #kc-info {
+        padding: 20px;
+    }
+    
+    #kc-header-wrapper h1 {
+        font-size: 24px;
+    }
+    
+    #kc-form-options {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .login-pf body {
+        background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+    }
+    
+    #kc-header,
+    #kc-content,
+    #kc-info {
+        background: rgba(45, 55, 72, 0.95);
+        color: #e2e8f0;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .form-control {
+        background: rgba(45, 55, 72, 0.9);
+        border-color: #4a5568;
+        color: #e2e8f0;
+    }
+    
+    .form-control:focus {
+        background: #2d3748;
+        border-color: #667eea;
+    }
+    
+    .control-label {
+        color: #e2e8f0;
+    }
+}
