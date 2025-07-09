@@ -73,15 +73,18 @@
         </script>
         
         <style>
-            /* Override all Keycloak default styles */
+            /* Ultra-Professional IPB Theme Styles with Enhanced Design */
             .login-pf-page {
-                background: #787878 !important;
-                background-image: url("${url.resourcesPath}/img/background.png") !important;
-                background-repeat: repeat-x !important;
-                font-family: 'Trebuchet MS',Verdana,sans-serif !important;
-                font-size: .8em !important;
+                background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 50%, #dee2e6 100%) !important;
+                background-attachment: fixed !important;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+                font-size: 14px !important;
                 margin: 0 !important;
                 padding: 0 !important;
+                min-height: 100vh !important;
+                color: #212529 !important;
+                -webkit-font-smoothing: antialiased !important;
+                -moz-osx-font-smoothing: grayscale !important;
             }
             
             #kc-header { display: none !important; }
@@ -122,128 +125,220 @@
             body {
                 width: 100% !important;
                 padding: 0 !important;
-                font-family: 'Trebuchet MS',Verdana,sans-serif !important;
-                font-size: .8em !important;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+                font-size: 14px !important;
                 margin: 0 !important;
-                background: #787878 !important;
-                background-image: url("${url.resourcesPath}/img/background.png") !important;
-                background-repeat: repeat-x !important;
+                background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 50%, #dee2e6 100%) !important;
+                background-attachment: fixed !important;
+                color: #212529 !important;
+                line-height: 1.6 !important;
+                font-weight: 400 !important;
+                -webkit-font-smoothing: antialiased !important;
+                -moz-osx-font-smoothing: grayscale !important;
             }
             
-            .cText { 
-                text-decoration: none !important; 
-                color: #000 !important; 
-                font-family: Verdana, Helvetica, Arial, Sans-Serif !important; 
-                font-size: 10px !important; 
+            /* Ultra-Professional Typography */
+            .ultra-professional-text { 
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important; 
+                color: #212529 !important; 
+                font-size: 14px !important;
+                line-height: 1.5 !important;
+                font-weight: 400 !important;
             }
             
-            .dText { 
-                text-decoration: none !important; 
-                color: #000 !important; 
-                font-family: Verdana, Helvetica, Arial, Sans-Serif !important; 
-                font-size: 8px !important; 
+            .ultra-professional-small { 
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important; 
+                color:rgb(66, 93, 117) !important; 
+                font-size: 12px !important;
+                line-height: 1.4 !important;
+                font-weight: 400 !important;
             }
             
+            /* Ultra-Professional Links */
             a {
-                color: #000000 !important; 
-                font-family: Verdana, Arial, Helvetica, sans-serif !important; 
-                font-size: 10px !important;
+                color: #0d6efd !important; 
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important; 
+                font-size: 14px !important;
+                text-decoration: none !important;
+                transition: all 0.2s ease-in-out !important;
+                font-weight: 500 !important;
             }
             
             a:active, a:visited {
-                color: #000000 !important;
+                color: #0d6efd !important;
             }
             
             a:hover {
-                color: #000000 !important; 
-                text-decoration: none !important;
+                color: #0a58ca !important; 
+                text-decoration: underline !important;
             }
             
-            .aFormtext { 
-                font-family: Verdana !important; 
-                font-size: 12pt !important; 
+            /* Ultra-Professional Form Inputs */
+            .ultra-professional-input { 
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important; 
+                font-size: 16px !important; 
+                color: #212529 !important; 
+                border: 2px solid #ced4da !important; 
+                background-color: #ffffff !important; 
+                border-radius: 8px !important;
+                padding: 14px 16px !important;
+                transition: all 0.2s ease-in-out !important;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.05) !important;
+                font-weight: 400 !important;
+                width: 100% !important;
+                box-sizing: border-box !important;
+            }
+            
+            .ultra-professional-input:focus {
+                border-color: #f7931e !important;
+                background-color: #ffffff !important;
+                box-shadow: 0 0 0 3px rgba(247, 147, 30, 0.1), 0 2px 8px rgba(0,0,0,0.1) !important;
+                outline: none !important;
+                transform: translateY(-1px) !important;
+            }
+            
+            /* Ultra-Professional Button */
+            .ultra-professional-button { 
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important; 
+                font-size: 16px !important; 
+                font-weight: 600 !important; 
                 color: #ffffff !important; 
-                border-style: solid !important; 
-                background-color: #f7931e !important; 
-                border-color: #000000 !important; 
-                border-width: 1px !important;
-                padding: 6px !important;
+                border: none !important; 
+                background: linear-gradient(135deg, #f7931e 0%, #e67e00 100%) !important; 
+                border-radius: 8px !important;
+                padding: 16px 32px !important; 
+                cursor: pointer !important; 
+                transition: all 0.2s ease-in-out !important;
+                box-shadow: 0 2px 8px rgba(247, 147, 30, 0.25) !important;
+                text-transform: none !important;
+                letter-spacing: 0.02em !important;
+                position: relative !important;
+                overflow: hidden !important;
+                min-width: 120px !important;
             }
             
-            .cFormtext { 
-                font-family: Verdana !important; 
-                font-size: 12pt !important; 
-                color: #000000 !important; 
-                border-style: solid !important; 
-                background-color: #EFEFEF !important; 
-                border-color: #000000 !important; 
-                border-width: 1px !important;
-                padding: 6px !important;
+            .ultra-professional-button:hover {
+                background: linear-gradient(135deg, #e67e00 0%, #d96d00 100%) !important;
+                transform: translateY(-2px) !important;
+                box-shadow: 0 4px 16px rgba(247, 147, 30, 0.35) !important;
             }
             
-            .label-text {
-                font-family: Verdana !important;
-                font-size: 12pt !important;
-                color: #000000 !important;
-                font-weight: normal !important;
+            .ultra-professional-button:active {
+                transform: translateY(0) !important;
+                box-shadow: 0 1px 4px rgba(247, 147, 30, 0.3) !important;
             }
             
-            .linkmenuprincipal {
-                font-family: Verdana !important; 
-                font-size: 10pt !important; 
-                color: #000000 !important; 
-                text-decoration: none !important;
+            /* Ultra-Professional Label */
+            .ultra-professional-label {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+                font-size: 14px !important;
+                color: #495057 !important;
+                font-weight: 500 !important;
+                margin-bottom: 8px !important;
+                display: block !important;
+                letter-spacing: 0.01em !important;
             }
             
-            /* Mobile responsive styles - Keep left alignment */
+            /* Ultra-Professional Error Messages with Enhanced Styling */
+            .ultra-professional-error {
+                color: #dc3545 !important;
+                font-size: 13px !important;
+                margin-top: 6px !important;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+                padding: 12px 16px !important;
+                background: linear-gradient(135deg, #f8d7da 0%, #f1aeb5 100%) !important;
+                border: 1px solid #f5c2c7 !important;
+                border-radius: 8px !important;
+                font-weight: 500 !important;
+                box-shadow: 0 2px 8px rgba(220, 53, 69, 0.15) !important;
+                border-left: 4px solid #dc3545 !important;
+                animation: slideInError 0.3s ease-out !important;
+            }
+            
+            /* Ultra-Professional Mobile responsive styles with fixed separation */
             @media (max-width: 768px) {
                 .mobile-header {
                     min-height: 120px !important;
-                    padding: 15px !important;
+                    padding: 25px 20px !important;
                     justify-content: flex-start !important;
                     align-items: center !important;
+                    box-shadow: 0 4px 16px rgba(0,0,0,0.08) !important;
+                    margin-bottom: 15px !important; /* Added margin to separate from orange bar */
+                    position: relative !important;
+                    z-index: 10 !important;
                 }
                 
                 .mobile-header img {
-                    max-height: 100px !important;
+                    max-height: 85px !important;
                     width: auto !important;
-                    max-width: 250px !important;
-                    margin-right: 15px !important;
+                    max-width: 180px !important;
+                    margin-right: 20px !important;
                     margin-left: 0 !important;
                     display: block !important;
                     visibility: visible !important;
                     opacity: 1 !important;
+                    filter: drop-shadow(0 3px 6px rgba(0,0,0,0.12)) !important;
                 }
                 
                 .mobile-header-text {
                     font-size: 18px !important;
                     margin: 0 !important;
                     text-align: left !important;
+                    font-weight: 600 !important;
+                    color: #f7931e !important;
+                    line-height: 1.3 !important;
+                }
+                
+                /* Fix mobile orange bar separation with clear spacing */
+                .orange-accent-bar {
+                    margin-top: 15px !important; /* Clear separation from header */
+                    margin-bottom: 25px !important; /* Clear separation from content */
+                    height: 8px !important;
+                    position: relative !important;
+                    z-index: 9 !important;
                 }
                 
                 .main-content {
-                    padding: 15px 5px !important;
+                    padding: 30px 15px !important;
+                    margin-top: 25px !important; /* Increased spacing from orange bar */
                 }
                 
                 .login-container {
-                    padding: 15px !important;
+                    padding: 30px 20px !important;
                     margin: 0 10px !important;
+                    border-radius: 16px !important;
+                    box-shadow: 0 12px 32px rgba(0,0,0,0.15) !important;
+                }
+                
+                /* Mobile form adjustments */
+                .ultra-professional-input {
+                    padding: 16px 20px !important;
+                    font-size: 16px !important;
+                    border-radius: 8px !important;
+                }
+                
+                .ultra-professional-button {
+                    padding: 18px 32px !important;
+                    font-size: 18px !important;
+                    border-radius: 8px !important;
+                    min-width: 140px !important;
                 }
             }
             
             @media (max-width: 480px) {
                 .mobile-header {
-                    min-height: 120px !important;
-                    padding: 15px 10px !important;
+                    min-height: 100px !important;
+                    padding: 20px 15px !important;
                     flex-direction: row !important;
                     align-items: center !important;
                     justify-content: flex-start !important;
+                    margin-bottom: 20px !important; /* Clear separation on small screens */
                 }
                 
                 .mobile-header img {
-                    max-height: 80px !important;
-                    max-width: 150px !important;
-                    margin-right: 10px !important;
+                    max-height: 70px !important;
+                    max-width: 130px !important;
+                    margin-right: 15px !important;
                     margin-left: 0 !important;
                 }
                 
@@ -253,40 +348,67 @@
                     text-align: left !important;
                     flex: 1 !important;
                 }
+                
+                /* Enhanced spacing for very small screens */
+                .orange-accent-bar {
+                    margin-top: 20px !important;
+                    margin-bottom: 30px !important;
+                }
+                
+                .login-container {
+                    padding: 25px 15px !important;
+                    margin: 0 8px !important;
+                    border-radius: 12px !important;
+                }
+                
+                .main-content {
+                    padding: 25px 8px !important;
+                    margin-top: 30px !important;
+                }
             }
         </style>
     <#elseif section = "form">
-        <!-- Main container with proper structure and mobile viewport -->
+        <!-- Ultra-Professional IPB Login Page -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <div style="width: 100%; min-height: 100vh; background: #787878; background-image: url('${url.resourcesPath}/img/background.png'); background-repeat: repeat-x; font-family: 'Trebuchet MS',Verdana,sans-serif; font-size: .8em; margin: 0; padding: 0;">
+        <div style="width: 100%; min-height: 100vh; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 50%, #dee2e6 100%); background-attachment: fixed; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; margin: 0; padding: 0;">
             
-            <!-- Header Section with header_left.jpg - Always Left Aligned -->
-            <div class="mobile-header" style="width: 100%; min-height: 100px; background: #ffffff; display: flex; align-items: center; justify-content: flex-start; padding: 15px; margin: 0; border-bottom: 2px solid #f7931e;">
+            <!-- Ultra-Professional Header Section -->
+            <div class="mobile-header" style="width: 100%; min-height: 100px; background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%); display: flex; align-items: center; justify-content: flex-start; padding: 25px; margin: 0; box-shadow: 0 2px 20px rgba(0,0,0,0.08); position: relative; z-index: 10;">
                 <img src="${url.resourcesPath}/img/header_left.jpg" alt="IPB Header" id="header-image"
-                     style="height: 80px; width: auto; max-width: 300px; margin-right: 15px; display: block !important; visibility: visible !important; opacity: 1 !important; object-fit: contain; image-rendering: auto;">
-                <div class="mobile-header-text" style="color: #f7931e; font-size: 22px; font-weight: bold; font-family: 'Trebuchet MS',Verdana,sans-serif; flex: 1;">
+                     style="height: 80px; width: auto; max-width: 280px; margin-right: 25px; display: block !important; visibility: visible !important; opacity: 1 !important; object-fit: contain; image-rendering: auto; filter: drop-shadow(0 2px 8px rgba(0,0,0,0.1));">
+                <div class="mobile-header-text" style="color: #f7931e; font-size: 24px; font-weight: 600; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; flex: 1; letter-spacing: -0.01em;">
                     IPB Identity Provider
                 </div>
             </div>
             
-            <!-- Orange Bar -->
-            <div style="width: 100%; height: 30px; background: #f7931e; margin: 0; padding: 0;"></div>
+            <!-- Ultra-Professional Orange Accent Bar with clear separation on all devices -->
+            <div class="orange-accent-bar" style="width: 100%; height: 6px; background: linear-gradient(90deg, #f7931e 0%, #e67e00 50%, #f7931e 100%); margin: 15px 0 25px 0; padding: 0; box-shadow: 0 2px 8px rgba(247, 147, 30, 0.3); position: relative; z-index: 9;"></div>
             
-            <!-- Main Content Area - Mobile Responsive -->
-            <div class="main-content" style="width: 100%; padding: 20px 10px; display: flex; justify-content: center; align-items: flex-start;">
-                <div class="login-container" style="width: 100%; max-width: 700px; background: #ffffff; border: 1px solid #ccc; border-radius: 5px; padding: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 0 10px;">
+            <!-- Ultra-Professional Main Content Area with enhanced spacing and design -->
+            <div class="main-content" style="width: 100%; padding: 50px 20px; display: flex; justify-content: center; align-items: flex-start; min-height: calc(100vh - 180px); margin-top: 25px;">
+                <div class="login-container" style="width: 100%; max-width: 420px; background: linear-gradient(135deg, #ffffff 0%, #fafbfc 100%); border: 1px solid #e1e5e9; border-radius: 20px; padding: 40px; box-shadow: 0 10px 40px rgba(0,0,0,0.12), 0 4px 16px rgba(0,0,0,0.08); margin: 0 20px; position: relative; backdrop-filter: blur(10px); overflow: hidden;">
                     
-                    <!-- Login Form Header -->
-                    <div style="background: #f7931e; padding: 15px; margin: -20px -20px 20px -20px; border-radius: 5px 5px 0 0; color: #000; font-weight: bold; font-size: 16px; font-family: Verdana;">
-                        Identity Provider | Login
+                    <!-- Subtle background pattern -->
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at 20% 80%, rgba(247, 147, 30, 0.03) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(247, 147, 30, 0.03) 0%, transparent 50%); pointer-events: none; z-index: 0;"></div>
+                    
+                    <!-- Content wrapper with higher z-index -->
+                    <div style="position: relative; z-index: 1;">
+                    
+                    <!-- Ultra-Professional Login Form Header -->
+                    <div style="background: linear-gradient(135deg, #f7931e 0%, #e67e00 100%); padding: 28px; margin: -40px -40px 40px -40px; border-radius: 20px 20px 0 0; color: #ffffff; font-weight: 600; font-size: 18px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; text-align: center; box-shadow: 0 6px 20px rgba(247, 147, 30, 0.25); letter-spacing: -0.01em; position: relative; overflow: hidden;">
+                        <!-- Enhanced gradient overlay -->
+                        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(45deg, rgba(255,255,255,0.15) 0%, transparent 50%, rgba(255,255,255,0.05) 100%); pointer-events: none;"></div>
+                        <span style="position: relative; z-index: 1; display: flex; align-items: center; justify-content: center;">
+                            <i style="margin-right: 12px; font-size: 20px;">🔐</i> Identity Provider Login
+                        </span>
                     </div>
                     
-                    <!-- Login Form -->
+                    <!-- Ultra-Professional Login Form -->
                     <#if realm.password>
                         <form id="kc-form-login" onsubmit="login.disabled = true; return true;" action="${url.loginAction}" method="post">
-                            <div style="margin-bottom: 20px;">
-                                <label style="display: block; margin-bottom: 8px; font-family: Verdana; font-size: 12pt; color: #000000; font-weight: normal;">
-                                    Código de Utilizador
+                            <div style="margin-bottom: 28px;">
+                                <label class="ultra-professional-label" style="display: block; margin-bottom: 10px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; font-size: 14px; color: #495057; font-weight: 500; letter-spacing: 0.01em;">
+                                    <i style="margin-right: 8px; color: #f7931e; font-size: 16px;">👤</i> Código de Utilizador
                                 </label>
                                 <input type="text" id="username" name="username" 
                                        value="${(login.username!'')}" 
@@ -294,219 +416,273 @@
                                        autocomplete="off"
                                        aria-invalid="<#if messagesPerField.existsError('username','password')>true</#if>"
                                        onkeypress="return handleEnter(this, event)" 
-                                       onfocus="this.style.backgroundColor='#f7931e'; this.style.color='#ffffff';" 
-                                       onblur="this.style.backgroundColor='#EFEFEF'; this.style.color='#000000';"
-                                       style="width: 100%; padding: 8px; font-family: Verdana; font-size: 12pt; color: #000000; border: 1px solid #000000; background-color: #EFEFEF;">
+                                       class="ultra-professional-input"
+                                       style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; font-size: 16px; color: #212529; border: 2px solid #ced4da; background-color: #ffffff; border-radius: 8px; padding: 14px 16px; transition: all 0.2s ease-in-out; box-shadow: 0 1px 3px rgba(0,0,0,0.05); font-weight: 400; width: 100%; box-sizing: border-box;">
                                 
                                 <#if messagesPerField.existsError('username','password')>
-                                    <div style="color: red; font-size: 11px; margin-top: 5px;" aria-live="polite">
-                                        ${kcSanitize(messagesPerField.getFirstError('username','password'))?no_esc}
+                                    <div class="ultra-professional-error" style="color: #dc3545; font-size: 13px; margin-top: 6px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; padding: 10px 14px; background: linear-gradient(135deg, #f8d7da 0%, #f1aeb5 100%); border: 1px solid #f5c2c7; border-radius: 6px; font-weight: 500; box-shadow: 0 1px 3px rgba(220, 53, 69, 0.1);" aria-live="polite">
+                                        <i style="margin-right: 6px;">⚠️</i> ${kcSanitize(messagesPerField.getFirstError('username','password'))?no_esc}
                                     </div>
                                 </#if>
                             </div>
                             
-                            <div style="margin-bottom: 20px;">
-                                <label style="display: block; margin-bottom: 8px; font-family: Verdana; font-size: 12pt; color: #000000; font-weight: normal;">
-                                    Senha de Acesso
+                            <div style="margin-bottom: 28px;">
+                                <label class="ultra-professional-label" style="display: block; margin-bottom: 10px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; font-size: 14px; color: #495057; font-weight: 500; letter-spacing: 0.01em;">
+                                    <i style="margin-right: 8px; color: #f7931e; font-size: 16px;">🔒</i> Senha de Acesso
                                 </label>
                                 <input type="password" id="password" name="password" 
                                        autocomplete="off"
                                        aria-invalid="<#if messagesPerField.existsError('username','password')>true</#if>"
-                                       onfocus="this.style.backgroundColor='#f7931e'; this.style.color='#ffffff';" 
-                                       onblur="this.style.backgroundColor='#EFEFEF'; this.style.color='#000000';"
-                                       style="width: 100%; padding: 8px; font-family: Verdana; font-size: 12pt; color: #000000; border: 1px solid #000000; background-color: #EFEFEF;">
+                                       class="ultra-professional-input"
+                                       style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; font-size: 16px; color: #212529; border: 2px solid #ced4da; background-color: #ffffff; border-radius: 8px; padding: 14px 16px; transition: all 0.2s ease-in-out; box-shadow: 0 1px 3px rgba(0,0,0,0.05); font-weight: 400; width: 100%; box-sizing: border-box;">
                             </div>
                             
-                            <div style="margin-bottom: 20px;">
+                            <div style="margin-bottom: 28px; text-align: center;">
                                 <input type="hidden" id="id-hidden-input" name="credentialId" <#if auth.selectedCredential?has_content>value="${auth.selectedCredential}"</#if>/>
-                                <input type="submit" value="Entrar >" name="login" id="kc-login" 
-                                       style="font-family: Verdana; font-size: 14pt; font-weight: bold; color: #000000; border: 1px solid #000000; background-color: #c0c0c0; padding: 12px 25px; cursor: pointer; border-radius: 3px;">
+                                <input type="submit" value="Entrar" name="login" id="kc-login" 
+                                       class="ultra-professional-button"
+                                       style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; font-size: 16px; font-weight: 600; color: #ffffff; border: none; background: linear-gradient(135deg, #f7931e 0%, #e67e00 100%); border-radius: 8px; padding: 16px 32px; cursor: pointer; transition: all 0.2s ease-in-out; box-shadow: 0 2px 8px rgba(247, 147, 30, 0.25); letter-spacing: 0.02em; position: relative; overflow: hidden; min-width: 120px;">
                             </div>
                             
                             <#if realm.rememberMe && !usernameEditDisabled??>
-                            <div style="margin-bottom: 10px;">
-                                <label style="font-family: Verdana; font-size: 10px; color: #000;">
+                            <div style="margin-bottom: 20px; text-align: center;">
+                                <label style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; font-size: 14px; color: #6c757d; display: flex; align-items: center; justify-content: center; cursor: pointer; font-weight: 400;">
                                     <#if login.rememberMe??>
-                                        <input id="rememberMe" name="rememberMe" type="checkbox" checked> Lembrar-me
+                                        <input id="rememberMe" name="rememberMe" type="checkbox" checked style="margin-right: 10px; accent-color: #f7931e; width: 16px; height: 16px;">
                                     <#else>
-                                        <input id="rememberMe" name="rememberMe" type="checkbox"> Lembrar-me
+                                        <input id="rememberMe" name="rememberMe" type="checkbox" style="margin-right: 10px; accent-color: #f7931e; width: 16px; height: 16px;">
                                     </#if>
+                                    <i style="margin-right: 6px; font-size: 14px;">💾</i> Lembrar-me neste dispositivo
                                 </label>
                             </div>
                             </#if>
                         </form>
                     </#if>
+                    
+                    </div> <!-- Close content wrapper -->
                 </div>
             </div>
         </div>
         
         <script>
-            // Set focus on username field and handle form interactions
+            // Ultra-professional form enhancements and image handling
             document.addEventListener('DOMContentLoaded', function() {
+                // Enhanced focus with ultra-professional styling
                 var usernameField = document.getElementById('username');
+                var passwordField = document.getElementById('password');
+                
                 if (usernameField) {
                     usernameField.focus();
+                    
+                    // Ultra-professional focus/blur effects
+                    usernameField.addEventListener('focus', function() {
+                        this.style.borderColor = '#f7931e';
+                        this.style.boxShadow = '0 0 0 3px rgba(247, 147, 30, 0.1), 0 2px 8px rgba(0,0,0,0.1)';
+                        this.style.transform = 'translateY(-1px)';
+                        this.style.backgroundColor = '#ffffff';
+                    });
+                    
+                    usernameField.addEventListener('blur', function() {
+                        this.style.borderColor = '#ced4da';
+                        this.style.boxShadow = '0 1px 3px rgba(0,0,0,0.05)';
+                        this.style.transform = 'translateY(0)';
+                    });
                 }
                 
-                // Mobile detection and image handling - Enhanced
+                if (passwordField) {
+                    passwordField.addEventListener('focus', function() {
+                        this.style.borderColor = '#f7931e';
+                        this.style.boxShadow = '0 0 0 3px rgba(247, 147, 30, 0.1), 0 2px 8px rgba(0,0,0,0.1)';
+                        this.style.transform = 'translateY(-1px)';
+                        this.style.backgroundColor = '#ffffff';
+                    });
+                    
+                    passwordField.addEventListener('blur', function() {
+                        this.style.borderColor = '#ced4da';
+                        this.style.boxShadow = '0 1px 3px rgba(0,0,0,0.05)';
+                        this.style.transform = 'translateY(0)';
+                    });
+                }
+                
+                // Ultra-professional button hover effects with smooth animations
+                var submitBtn = document.getElementById('kc-login');
+                if (submitBtn) {
+                    submitBtn.addEventListener('mouseenter', function() {
+                        this.style.background = 'linear-gradient(135deg, #e67e00 0%, #d96d00 100%)';
+                        this.style.transform = 'translateY(-2px)';
+                        this.style.boxShadow = '0 4px 16px rgba(247, 147, 30, 0.35)';
+                    });
+                    
+                    submitBtn.addEventListener('mouseleave', function() {
+                        this.style.background = 'linear-gradient(135deg, #f7931e 0%, #e67e00 100%)';
+                        this.style.transform = 'translateY(0)';
+                        this.style.boxShadow = '0 2px 8px rgba(247, 147, 30, 0.25)';
+                    });
+                    
+                    submitBtn.addEventListener('mousedown', function() {
+                        this.style.transform = 'translateY(0)';
+                        this.style.boxShadow = '0 1px 4px rgba(247, 147, 30, 0.3)';
+                    });
+                }
+                
+                // Mobile detection and ultra-professional image handling
                 var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
                 var isSmallScreen = window.innerWidth <= 768;
                 
-                console.log('Device detection - Mobile:', isMobile, 'Small screen:', isSmallScreen, 'Width:', window.innerWidth);
-                console.log('Testing with JPG image instead of PNG for mobile compatibility');
+                console.log('🎨 Ultra-Professional IPB Theme Loaded');
+                console.log('📱 Device detection - Mobile:', isMobile, 'Small screen:', isSmallScreen, 'Width:', window.innerWidth);
+                console.log('🖼️ Using optimized JPG format for superior mobile compatibility');
                 
-                // Find the header image and ensure it's visible
+                // Ultra-professional image handling with enhanced mobile support
                 var headerImg = document.querySelector('img[alt="IPB Header"]');
                 if (headerImg) {
-                    console.log('Header image found (JPG):', headerImg.src);
-                    console.log('Image complete:', headerImg.complete);
-                    console.log('Image naturalWidth:', headerImg.naturalWidth);
-                    console.log('Image naturalHeight:', headerImg.naturalHeight);
+                    console.log('✅ Header image found (JPG):', headerImg.src);
                     
-                    // Force image to be visible on all devices - Enhanced for mobile
+                    // Enhanced visibility and professional rendering
                     headerImg.style.display = 'block';
                     headerImg.style.visibility = 'visible';
                     headerImg.style.opacity = '1';
                     headerImg.style.objectFit = 'contain';
                     headerImg.style.imageRendering = 'auto';
-                    headerImg.style.webkitImageRendering = 'auto';
-                    headerImg.style.msInterpolationMode = 'bicubic';
                     
-                    // Mobile-specific image fixes
-                    if (isMobile || isSmallScreen) {
-                        // Try to force image rendering on mobile
-                        headerImg.style.maxWidth = '250px';
-                        headerImg.style.height = 'auto';
-                        headerImg.style.width = 'auto';
-                        headerImg.style.minHeight = '60px';
-                        headerImg.style.minWidth = '100px';
-                        headerImg.style.objectFit = 'scale-down';
-                        
-                        // Force hardware acceleration on mobile
-                        headerImg.style.transform = 'translateZ(0)';
-                        headerImg.style.webkitTransform = 'translateZ(0)';
-                        headerImg.style.backfaceVisibility = 'hidden';
-                        headerImg.style.webkitBackfaceVisibility = 'hidden';
-                        
-                        console.log('Applied mobile-specific image fixes');
-                    }
-                    
-                    // Try to reload the image with cache busting if it's not loading
-                    if (headerImg.naturalWidth === 0) {
-                        console.log('Image not loaded, attempting multiple reload strategies...');
-                        var originalSrc = headerImg.src;
-                        
-                        // Strategy 1: Force reload with cache busting
-                        headerImg.src = '';
-                        setTimeout(function() {
-                            headerImg.src = originalSrc + '?v=' + Date.now();
-                        }, 100);
-                        
-                        // Strategy 2: Try creating a new image element
-                        setTimeout(function() {
-                            if (headerImg.naturalWidth === 0) {
-                                console.log('Trying new image element approach...');
-                                var newImg = new Image();
-                                newImg.onload = function() {
-                                    console.log('New image loaded successfully, replacing...');
-                                    headerImg.src = newImg.src;
-                                };
-                                newImg.onerror = function() {
-                                    console.log('New image also failed to load');
-                                };
-                                newImg.src = originalSrc;
-                            }
-                        }, 500);
-                        
-                        // Strategy 3: Since we're now using JPG, try PNG as fallback
-                        setTimeout(function() {
-                            if (headerImg.naturalWidth === 0) {
-                                console.log('JPG failed, trying PNG fallback...');
-                                var fallbackSrc = originalSrc.replace('.jpg', '.png');
-                                if (fallbackSrc !== originalSrc) {
-                                    headerImg.src = fallbackSrc;
-                                } else {
-                                    console.log('No PNG fallback available');
-                                }
-                            }
-                        }, 1000);
-                    }
-                    
-                    if (isMobile || isSmallScreen) {
-                        // Mobile styling - always left aligned
-                        headerImg.style.margin = '0 15px 0 0';
-                        headerImg.style.height = '80px';
-                        headerImg.style.maxHeight = '80px';
-                        headerImg.style.width = 'auto';
-                        headerImg.style.maxWidth = '250px';
-                        console.log('Applied mobile styling to image - left aligned');
-                    } else {
-                        // Desktop styling - left aligned
-                        headerImg.style.height = '80px';
-                        headerImg.style.width = 'auto';
-                        headerImg.style.margin = '0 15px 0 0';
-                        console.log('Applied desktop styling to image');
-                    }
-                    
-                    // Check if image loads
+                    // Ultra-professional image loading with enhanced error handling
                     headerImg.onload = function() {
-                        console.log('Image loaded successfully');
-                        console.log('Final image dimensions:', headerImg.naturalWidth, 'x', headerImg.naturalHeight);
-                        console.log('Displayed dimensions:', headerImg.offsetWidth, 'x', headerImg.offsetHeight);
-                        console.log('Image visible on screen:', headerImg.offsetWidth > 0 && headerImg.offsetHeight > 0);
+                        console.log('🎉 Ultra-professional header image loaded successfully');
+                        console.log('📏 Image dimensions:', this.naturalWidth, 'x', this.naturalHeight);
+                        console.log('🖥️ Display dimensions:', this.offsetWidth, 'x', this.offsetHeight);
+                        
+                        // Add professional loading animation
+                        this.style.transition = 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
+                        this.style.filter = 'drop-shadow(0 2px 8px rgba(0,0,0,0.1))';
+                        this.style.opacity = '1';
                     };
                     
                     headerImg.onerror = function() {
-                        console.log('Image failed to load, URL:', headerImg.src);
-                        // Hide the image element if it fails to load
-                        headerImg.style.display = 'none';
+                        console.log('❌ JPG image failed to load, implementing ultra-professional fallback...');
+                        var originalSrc = this.src;
+                        var fallbackSrc = originalSrc.replace('.jpg', '.png');
                         
-                        // Optionally create a text fallback
-                        var fallback = document.createElement('div');
-                        fallback.innerHTML = 'IPB';
-                        fallback.style.cssText = 'width: 80px; height: 80px; background: #f7931e; color: white; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-right: 15px;';
-                        headerImg.parentNode.insertBefore(fallback, headerImg);
+                        if (fallbackSrc !== originalSrc) {
+                            console.log('🔄 Trying PNG fallback...');
+                            this.src = fallbackSrc;
+                        } else {
+                            // Create ultra-professional text fallback
+                            var fallback = document.createElement('div');
+                            fallback.innerHTML = '<strong style="font-size: 24px; letter-spacing: 2px;">IPB</strong>';
+                            fallback.style.cssText = 'width: 80px; height: 80px; background: linear-gradient(135deg, #f7931e 0%, #e67e00 100%); color: white; display: flex; align-items: center; justify-content: center; font-weight: 600; margin-right: 25px; border-radius: 12px; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif; box-shadow: 0 4px 16px rgba(247, 147, 30, 0.25); position: relative; overflow: hidden;';
+                            
+                            // Add subtle animation to fallback
+                            var shimmer = document.createElement('div');
+                            shimmer.style.cssText = 'position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent); animation: shimmer 2s infinite;';
+                            fallback.appendChild(shimmer);
+                            
+                            this.parentNode.insertBefore(fallback, this);
+                            this.style.display = 'none';
+                        }
                     };
-                } else {
-                    console.log('Header image not found');
                 }
                 
-                // Force header to be mobile-friendly but always left-aligned
-                var headerDiv = document.querySelector('.mobile-header');
-                if (headerDiv && (isMobile || isSmallScreen)) {
-                    // Always keep left alignment on all devices
-                    headerDiv.style.flexDirection = 'row';
-                    headerDiv.style.textAlign = 'left';
-                    headerDiv.style.alignItems = 'center';
-                    headerDiv.style.justifyContent = 'flex-start';
-                    headerDiv.style.minHeight = '100px';
-                    headerDiv.style.padding = '15px';
-                    console.log('Applied mobile styling to header container - left aligned');
-                }
-                
-                // Ensure form submission works
+                // Ultra-professional form validation with enhanced UX
                 var form = document.getElementById('kc-form-login');
                 if (form) {
                     form.addEventListener('submit', function(e) {
-                        var username = document.getElementById('username').value;
+                        var username = document.getElementById('username').value.trim();
                         var password = document.getElementById('password').value;
                         
                         if (!username || !password) {
                             e.preventDefault();
-                            alert('Por favor, preencha o código de utilizador e a senha.');
+                            
+                            // Ultra-professional error notification
+                            var notification = document.createElement('div');
+                            notification.innerHTML = '<div style="display: flex; align-items: center;"><i style="margin-right: 12px; font-size: 20px;">⚠️</i><div><strong>Campos obrigatórios</strong><br><span style="font-size: 13px; opacity: 0.9;">Por favor, preencha o código de utilizador e a senha.</span></div></div>';
+                            notification.style.cssText = 'position: fixed; top: 30px; left: 50%; transform: translateX(-50%); background: linear-gradient(135deg, #dc3545 0%, #c82333 100%); color: white; padding: 16px 24px; border-radius: 12px; box-shadow: 0 8px 32px rgba(220, 53, 69, 0.3); z-index: 9999; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif; font-size: 14px; max-width: 400px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1);';
+                            
+                            document.body.appendChild(notification);
+                            
+                            // Animate notification
+                            notification.style.opacity = '0';
+                            notification.style.transform = 'translateX(-50%) translateY(-20px)';
+                            
+                            setTimeout(function() {
+                                notification.style.transition = 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
+                                notification.style.opacity = '1';
+                                notification.style.transform = 'translateX(-50%) translateY(0)';
+                            }, 10);
+                            
+                            setTimeout(function() {
+                                notification.style.opacity = '0';
+                                notification.style.transform = 'translateX(-50%) translateY(-20px)';
+                                setTimeout(function() {
+                                    notification.remove();
+                                }, 300);
+                            }, 4000);
+                            
                             return false;
                         }
                         
-                        // Disable submit button to prevent double submission
+                        // Ultra-professional loading state
                         var submitBtn = document.getElementById('kc-login');
                         if (submitBtn) {
                             submitBtn.disabled = true;
                             submitBtn.value = 'Processando...';
+                            submitBtn.style.background = 'linear-gradient(135deg, #6c757d 0%, #5a6268 100%)';
+                            submitBtn.style.cursor = 'not-allowed';
+                            submitBtn.style.transform = 'translateY(0)';
+                            
+                            // Add loading spinner
+                            var spinner = document.createElement('div');
+                            spinner.style.cssText = 'width: 16px; height: 16px; border: 2px solid rgba(255,255,255,0.3); border-radius: 50%; border-top: 2px solid white; animation: spin 1s linear infinite; margin-right: 8px; display: inline-block;';
+                            submitBtn.innerHTML = '';
+                            submitBtn.appendChild(spinner);
+                            submitBtn.appendChild(document.createTextNode('Processando...'));
                         }
                         
                         return true;
                     });
                 }
+                
+                // Add CSS animations and enhanced styling
+                var style = document.createElement('style');
+                style.textContent = `
+                    @keyframes slideInError {
+                        0% { 
+                            opacity: 0; 
+                            transform: translateY(-10px); 
+                        }
+                        100% { 
+                            opacity: 1; 
+                            transform: translateY(0); 
+                        }
+                    }
+                    @keyframes shimmer {
+                        0% { left: -100%; }
+                        100% { left: 100%; }
+                    }
+                    @keyframes spin {
+                        0% { transform: rotate(0deg); }
+                        100% { transform: rotate(360deg); }
+                    }
+                    @keyframes fadeInUp {
+                        0% {
+                            opacity: 0;
+                            transform: translateY(20px);
+                        }
+                        100% {
+                            opacity: 1;
+                            transform: translateY(0);
+                        }
+                    }
+                    .login-container {
+                        animation: fadeInUp 0.6s ease-out !important;
+                    }
+                    .mobile-header {
+                        animation: fadeInUp 0.4s ease-out !important;
+                    }
+                    .orange-accent-bar {
+                        animation: fadeInUp 0.5s ease-out 0.1s both !important;
+                    }
+                `;
+                document.head.appendChild(style);
             });
             
             function handleEnter(field, event) {
