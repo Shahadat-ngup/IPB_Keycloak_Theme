@@ -134,15 +134,6 @@ The theme uses a simplified approach:
 - **JavaScript fallback**: Handles image loading errors gracefully
 - **Clean design**: No decorative backgrounds or multiple images
 
-### File Structure
-
-- **`login.ftl`**: Main login template (FreeMarker) - heavily customized
-- **`theme.properties`**: Theme configuration
-- **`messages_en.properties`**: Text labels and messages
-- **`resources/img/header_left.png`**: Primary header image (only one used)
-- **`resources/css/`**: Custom stylesheets
-
-
 ## � Troubleshooting
 
 ### Known Issues
