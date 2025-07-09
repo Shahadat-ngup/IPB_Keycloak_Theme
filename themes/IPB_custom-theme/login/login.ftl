@@ -260,10 +260,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <div style="width: 100%; min-height: 100vh; background: #787878; background-image: url('${url.resourcesPath}/img/background.png'); background-repeat: repeat-x; font-family: 'Trebuchet MS',Verdana,sans-serif; font-size: .8em; margin: 0; padding: 0;">
             
-            <!-- Header Section with header_left.png - Always Left Aligned -->
+            <!-- Header Section with header_left.jpg - Always Left Aligned -->
             <div class="mobile-header" style="width: 100%; min-height: 100px; background: #ffffff; display: flex; align-items: center; justify-content: flex-start; padding: 15px; margin: 0; border-bottom: 2px solid #f7931e;">
-                <img src="${url.resourcesPath}/img/header_left.png" alt="IPB Header" id="header-image"
-                     style="height: 80px; width: auto; max-width: 300px; margin-right: 15px; display: block !important; visibility: visible !important; opacity: 1 !important; object-fit: contain; image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;">
+                <img src="${url.resourcesPath}/img/header_left.jpg" alt="IPB Header" id="header-image"
+                     style="height: 80px; width: auto; max-width: 300px; margin-right: 15px; display: block !important; visibility: visible !important; opacity: 1 !important; object-fit: contain; image-rendering: auto;">
                 <div class="mobile-header-text" style="color: #f7931e; font-size: 22px; font-weight: bold; font-family: 'Trebuchet MS',Verdana,sans-serif; flex: 1;">
                     IPB Identity Provider
                 </div>
@@ -353,11 +353,12 @@
                 var isSmallScreen = window.innerWidth <= 768;
                 
                 console.log('Device detection - Mobile:', isMobile, 'Small screen:', isSmallScreen, 'Width:', window.innerWidth);
+                console.log('Testing with JPG image instead of PNG for mobile compatibility');
                 
                 // Find the header image and ensure it's visible
                 var headerImg = document.querySelector('img[alt="IPB Header"]');
                 if (headerImg) {
-                    console.log('Header image found:', headerImg.src);
+                    console.log('Header image found (JPG):', headerImg.src);
                     console.log('Image complete:', headerImg.complete);
                     console.log('Image naturalWidth:', headerImg.naturalWidth);
                     console.log('Image naturalHeight:', headerImg.naturalHeight);
@@ -417,14 +418,15 @@
                             }
                         }, 500);
                         
-                        // Strategy 3: Try different image formats or fallback
+                        // Strategy 3: Since we're now using JPG, try PNG as fallback
                         setTimeout(function() {
                             if (headerImg.naturalWidth === 0) {
-                                console.log('All image loading strategies failed, trying fallback...');
-                                // Check if we have other image formats available
-                                var fallbackSrc = originalSrc.replace('.png', '.jpg');
+                                console.log('JPG failed, trying PNG fallback...');
+                                var fallbackSrc = originalSrc.replace('.jpg', '.png');
                                 if (fallbackSrc !== originalSrc) {
                                     headerImg.src = fallbackSrc;
+                                } else {
+                                    console.log('No PNG fallback available');
                                 }
                             }
                         }, 1000);
