@@ -2,7 +2,28 @@
 
 All notable changes to the IPB Custom Keycloak Theme project will be documented in this file.
 
-## [1.0.0] - 2024-12-XX
+## [1.1.0] - 2024-12-09
+
+### Fixed
+- 🔧 **Mobile Image Display Issue Resolved**: Switched from PNG to JPG format for header image
+- ✅ Header image (`header_left.jpg`) now displays correctly on all mobile browsers
+- 📱 Improved mobile performance with smaller file size (6.5KB vs 17.5KB)
+- 🚀 Enhanced mobile compatibility across iOS Safari, Android Chrome, Samsung Internet
+
+### Changed
+- Updated main header image from `header_left.png` to `header_left.jpg`
+- Improved JavaScript fallback to try PNG if JPG fails
+- Updated console logging for better debugging of image format testing
+- Enhanced image rendering settings for better mobile compatibility
+
+### Documentation
+- Updated README.md to reflect mobile issue resolution
+- Added mobile compatibility verification status
+- Updated project status from "under investigation" to "production ready"
+
+## [1.0.0] - 2024-12-08
+
+## [1.0.0] - 2024-12-08
 
 ### Added
 - Initial release of IPB Custom Keycloak Theme
@@ -23,7 +44,7 @@ All notable changes to the IPB Custom Keycloak Theme project will be documented 
 - ✅ Left-aligned IPB branding
 - ✅ Fallback text when image fails to load
 
-### Known Issues
+### Known Issues (Resolved in v1.1.0)
 - ⚠️ Mobile image display: `header_left.png` may not render on some mobile browsers
   - Layout and functionality remain intact
   - Fallback text displays properly
@@ -48,9 +69,3 @@ All notable changes to the IPB Custom Keycloak Theme project will be documented 
 - Added comprehensive error handling and fallbacks
 - Optimized for production deployment
 - Removed debugging code and styling
-
-### Future Considerations
-- [ ] Investigate mobile PNG rendering issue
-- [ ] Consider JPG conversion for better mobile compatibility
-- [ ] Test on additional mobile browsers
-- [ ] Implement alternative mobile image strategy if needed
